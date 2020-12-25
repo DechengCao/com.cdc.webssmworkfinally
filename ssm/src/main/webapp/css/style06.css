@@ -1,0 +1,65 @@
+.aaa {
+  background-color: #141513;
+  color: #efefef;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  display: grid;
+  grid-template-rows: repeat(38, 50px);
+  grid-template-columns: repeat(24, 50px);
+}
+
+.aaa div {
+  width: 400px;
+  height: 400px;
+}
+
+.aaa p {
+  text-align: justify;
+  hyphens: auto;
+  margin: 0;
+}
+
+.aaa .right {
+  float: right;
+  width: 200px;
+  height: 400px;
+  shape-outside: polygon(200px 400px, 200px 200px, -0.5% 50%, 0px 400px);
+}
+
+.aaa .left {
+  float: left;
+  width: 200px;
+  height: 400px;
+  shape-outside: polygon(200px 400px, 200px 200px, -0.5% 50%, 0px 400px);
+}
+
+
+.aaa div:nth-of-type(2) {
+  grid-row: 6;
+  grid-column: 6;
+}
+
+.aaa div:nth-of-type(3) {
+  grid-row: 11;
+  grid-column: 11;
+}
+
+.aaa div:nth-of-type(4) {
+  grid-row: 16;
+  grid-column: 16;
+}
+
+.aaa div:nth-of-type(5) {
+  grid-row: 21;
+  grid-column: 11;
+}
+
+.aaa div:nth-of-type(6) {
+  grid-row: 26;
+  grid-column: 6;
+}
+
+.aaa div:nth-of-type(7) {
+  grid-row: 31;
+  grid-column: 1;
+}

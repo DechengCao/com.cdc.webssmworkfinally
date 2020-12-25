@@ -1,0 +1,44 @@
+* { margin: 0; padding: 0;}
+a { text-decoration: none;}
+input { outline: none;}
+body { overflow-y: scroll;}
+
+#banner { position: relative; height: 500px;width: 1550px;}
+.nav { position: absolute; left: 50%; top: 0; z-index: 2; width: 1240px; margin-left: -620px;}
+.www{float: right}
+.nav-link { float: contour; font-size: 0;}
+.nav-link li { display: inline-block; font-size: 20px;}
+.nav-link a { display: block; height: 22px; padding: 30px 20px; line-height: 22px;}
+.gray .nav-link a { color: #333;}
+.white .nav-link a { color: #fff;}
+.nav-link a:hover { color: #00b9f2;}
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    display: none;
+    width: 100%; /*否则按内容计算*/
+    background-color: moccasin;
+    padding: 0px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.swiper-container { z-index: 1;height: 0px;}
+.swiper-slide { background-position: 50% 0;}
+.swiper-slide a { display: block; height: 500px;}
+.swiper-container-horizontal > .swiper-pagination-bullets { bottom: 24px;}
+
+.swiper-pagination-bullet { width: 6px; height: 6px; border-width: 1px; border-style: solid; opacity: 1;}
+
+.gray .swiper-pagination-bullet { border-color: #666; background-color: #666;}
+.gray .swiper-pagination-bullet-active { background-color: transparent;}
+
+.white .swiper-pagination-bullet { border-color: #fff; background-color: #fff;}
+.white .swiper-pagination-bullet-active { background-color: transparent;}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet { margin: 0 8px;}

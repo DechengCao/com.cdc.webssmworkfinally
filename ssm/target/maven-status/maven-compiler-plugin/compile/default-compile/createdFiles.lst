@@ -1,0 +1,6 @@
+com\cdc\controller\NewsController.class
+com\cdc\service\NewsServiceImpl.class
+com\cdc\dao\NewsMapper.class
+com\cdc\service\NewsService.class
+com\cdc\pojo\News.class
+com\cdc\config\Interceptor.class
