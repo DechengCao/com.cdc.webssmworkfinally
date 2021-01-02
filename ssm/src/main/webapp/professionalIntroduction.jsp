@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <style>
         body{
+            background-image: url(img/backimg.jpeg);
+        }
+        body{
             margin:0;
             padding:0;
             height: 40%;
@@ -66,7 +69,7 @@
         .navbg {
             height:78px;
             width: 100%;
-            background: rgb(0 120 90);
+            background: rgb(178 201 188);
             top: 10px;
             z-index:99;
             left:0;
@@ -92,8 +95,8 @@
             z-index:10000;
             top:78px;
             left:-30px;
-            background:rgb(0 120 90);
-            border:rgb(0 120 90) 1px solid;
+            background:rgb(178 201 188);
+            border:rgb(178 201 188) 1px solid;
             border-bottom:none;
             border-radius: 6px;
         }
@@ -105,7 +108,7 @@
             height:48px;
             position:relative;
             line-height:48px;
-            border-bottom:rgb(0 120 90) 1px solid;
+            border-bottom:rgb(178 201 188) 1px solid;
             font-size:12px;
             border-radius: 6px;
             margin-top: 0px;
@@ -132,6 +135,95 @@
         .zifooter p{
             color: white;
             font-size: 23px;
+        }
+
+        /*  footer*/
+        @import url(http://fonts.googleapis.com/css?family=Lato:300:400);
+
+        body {
+            margin:0;
+        }
+
+        .header h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight:300;
+            letter-spacing: 2px;
+            font-size:48px;
+        }
+        .header p {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size:14px;
+            color: #333333;
+        }
+
+
+
+
+        .flex { /*Flexbox for containers*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .waves {
+            position:relative;
+            width: 100%;
+            height:15vh;
+            margin-bottom:-7px; /*Fix for safari gap*/
+            min-height:100px;
+            max-height:150px;
+        }
+
+        .content {
+            position:relative;
+            height:20vh;
+            text-align:center;
+            background-color: white;
+        }
+
+        /* Animation */
+
+        .parallax > use {
+            animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+        }
+        .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+        }
+        .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+        }
+        .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+        }
+        .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+        }
+        @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px,0,0);
+            }
+            100% {
+                transform: translate3d(85px,0,0);
+            }
+        }
+        /*Shrinking for mobile*/
+        @media (max-width: 768px) {
+            .waves {
+                height:40px;
+                min-height:40px;
+            }
+            .content {
+                height:30vh;
+            }
+            h1 {
+                font-size:24px;
+            }
         }
     </style>
 </head>
@@ -173,7 +265,7 @@
         </ul>
     </div>
 </div>
-<div class="container wrapper" style="margin-top: 50px">
+<div class="container wrapper" style="margin-top: 50px;background: rgba(0,0,0,0)">
     <div class="clearfix"></div>
     <ul class="thumbnails gridex">
         <li class="span3 clearfix">
@@ -467,6 +559,39 @@
 
     <div class="push"></div>
 </div>
+
+
+<%--footer--%>
+<div class="header" ">
+
+
+
+<!--Waves Container-->
+<div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto" >
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+
+    </svg>
+
+    <div style="background:white;text-align:center;padding-bottom:20px;padding-top:70px;margin: 0; font:normal 14px/24px 'MicroSoft YaHei';">
+        <p>东北林业大学信息与计算机工程学院软件工程曹德成同学版权所有</p>
+        <p>QQ：1290786384 邮箱：1290786384@qq.com</p>
+    </div>
+
+</div>
+<!--Waves end-->
+
+</div>
+
+<!--Header ends-->
 
 <script src="js/jquery1.js"></script>
 <script src="js/bootstrap-gridex.min.js"></script>

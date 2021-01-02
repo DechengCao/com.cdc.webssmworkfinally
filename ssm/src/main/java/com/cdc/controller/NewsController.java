@@ -44,7 +44,7 @@ public class NewsController {
         newsService.updateNews(news);
         return "redirect:/news/allNews";
     }
-    @RequestMapping("deleteNews")
+    @RequestMapping("/deleteNews")
     public String deleteNews(int id){
         newsService.deleteNews(id);
         return "redirect:/news/allNews";
@@ -57,7 +57,7 @@ public class NewsController {
         model.addAttribute("list",list);
         return "allNews";
     }
-    @RequestMapping("toNewsPage")
+    @RequestMapping("/toNewsPage")
     public String toNewsPage(int id ,Model model){
         News news = newsService.queryNewsById(id);
         model.addAttribute("news",news);

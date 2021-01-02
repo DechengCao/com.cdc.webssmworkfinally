@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/style03.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <style>
+
         body, div, ul, li{
             margin:0;
             padding:0;
@@ -67,7 +68,7 @@
         }
 
         #navul li a:link, #navul li a:visited {
-            color:#FFFFFF;
+            color:rgb(178 201 188);
             font-size: 20px;
         }
         #navul li ul {
@@ -76,8 +77,8 @@
             z-index:10000;
             top:78px;
             left:-30px;
-            background:wheat;
-            border:wheat 1px solid;
+            background:rgb(178 201 188);
+            border:rgb(178 201 188) 1px solid;
             border-bottom:none;
             border-radius: 6px;
         }
@@ -89,7 +90,7 @@
             height:48px;
             position:relative;
             line-height:48px;
-            border-bottom:#018513 1px solid;
+            border-bottom:rgb(178 201 188) 1px solid;
             font-size:12px;
             border-radius: 6px;
             margin-top: 0px;
@@ -180,7 +181,7 @@
         </ul>
     </div>
 </div>
-<div class="chajian111">
+<div class="chajian111" >
     <div class="testimonialblock">
         <!-- testimonial block !-->
         <div class="container">

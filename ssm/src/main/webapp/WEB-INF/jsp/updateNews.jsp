@@ -19,7 +19,7 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    <small>修改书籍</small>
+                    <small>修改新闻</small>
                 </h1>
             </div>
         </div>

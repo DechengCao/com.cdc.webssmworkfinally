@@ -76,8 +76,8 @@
             z-index:10000;
             top:78px;
             left:-30px;
-            background:wheat;
-            border:wheat 1px solid;
+            background:rgb(178 201 188);
+            border:rgb(178 201 188) 1px solid;
             border-bottom:none;
             border-radius: 6px;
         }
@@ -89,7 +89,7 @@
             height:48px;
             position:relative;
             line-height:48px;
-            border-bottom:#018513 1px solid;
+            border-bottom:rgb(178 201 188) 1px solid;
             font-size:12px;
             border-radius: 6px;
             margin-top: 0px;
